@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #313132;
+        }
+
+        #about-us {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.9rem;
+            /* border: 2px solid cyan; */
+            border-radius: 20px;
+            line-height: 40px;
+            margin: 20px 20px 20px 20px;
+        }
+
+        .heading {
+            margin: 10px auto;
+            color: #EFC862;
+        }
+
+        .paragraph {
+            flex-wrap: wrap;
+            margin-left: 20px;
+            margin-right: 10px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .founders {
+            margin: 50px 130px 100px 130px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 4px solid #EFC862;
+            border-radius: 15px;
+        }
+
+        .founders-2 {
+            margin: 50px 50px 30px 30px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 4px solid #EFC862;
+            border-radius: 15px;
+        }
+
+        .image {
+            display: block;
+            clip-path: circle();
+            height: 225px;
+            width: 195px;
+            margin-left: 30px;
+        }
+
+        .image-direction {
+            display: flex;
+            flex-direction: column;
+        }
+        .link{
+            color:tomato; 
+            cursor: pointer; 
+            text-decoration: none;
+             font-size: 1.5rem;
+             margin: auto;
+
+        }
+
+        @media only screen and (max-width: 450px) {
+            .founders{
+                margin: 10px;
+            }
+            .founders-2{
+                margin: 30px 30px 30px 30px;
+            }
+            .image{
+                width: 150px;
+                height: 180px;
+            }
+            #about-us {
+            
+            font-size: 1.5rem;
+            
+            }
+            .paragraph {
+            
+            font-size: 1.2rem;
+        }
+        .image-direction{
+            margin: auto;
+        }
+        .image-direction , a {
+            font-size: 1.2rem;
+        }
+        .link{
+            font-size: 1.2rem;
+            margin: auto;
+        }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="about-us">
+        <h3 class="heading">About Us</h3>
+
+        <div class="founders">
+            <p class="paragraph">electroozone.com is an electronics concept based website which provides free contents
+                of Integrated circuits to our users. We have tried to make content short and easy to understable so that
+                user feel free to study confortably. All the content is designed as per aktu syllabus format but it will
+                aslo be helpful for non-aktu affiliated students as it contains subjects topics which are written in
+                such a way that anyone can understand the basic concept behind the topic. </p>
+        </div>
+
+
+
+        <h3 class="heading">Who we are?</h3>
+
+        <div class="founders-2">
+            <p class="paragraph">electroozone.com is designed and developed by 2 enginners named <strong
+                    style="color: darkturquoise"> Shubham Sangwan </strong> <br> and <strong
+                    style="color: darkturquoise"> Shivam Yadav </strong>. We are currently pursuing B.Tech in
+                Electronics and communications <br> at <strong style="color: cyan;"> KIET Group of Institutions
+                </strong> and currently we are in 3rd year. </p>
+            <div class="image-direction">
+                <img class="image" src="images/founders/shubham sangwan.jpg" alt="image">
+                <a class="link"
+                    href="www.linkedin.com/in/shubham-sangwan-674b4b137">Linkedin</a>
+            </div>
+
+            <div class="image-direction">
+                <img class="image" src="images/founders/shivam yadav.jpg" alt="image">
+                <a class="link"
+                    href="https://www.linkedin.com/in/shivam-yadav-14a0621ba/">Linkedin</a>
+            </div>
+        </div>
+
+        <h3 class="heading">Our Aim...</h3>
+
+        <div class="founders">
+            <p class="paragraph">Our Aim is to spread our content to all the students who are willing to get "hands-on"
+                on Integrated Circuits. Content is free to use and we hope user will like it. With time to time users
+                will get updated version of contents as well as design updation of website and will try to solve out all
+                your queries. we will try to make or modify our website more user friendly in future. <a
+                    style="color: cyan;" href="https://electroozone.com">https://electroozone.com</a> </p>
+        </div>
+        <h3 class="heading">For More Information</h3>
+
+        <div class="founders">
+            <p class="paragraph">For more information or any query feel free to contact us on our offical mail : <strong
+                    style="color: cyan;"> electroozone510@gmail.com</strong> we try to solve as soon as possible. </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

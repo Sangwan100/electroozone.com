@@ -1,0 +1,249 @@
+html{
+    font-size: 62.5%;   
+    /* is equal to 10px  */
+}
+#home-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border:2px solid red; */
+    margin-left: 15px;
+}
+
+
+.content{
+    
+    /* border:2px solid blue; */
+    display: inline;
+    height: 10%;
+    margin-top: 70px;
+}
+
+.image{
+    
+    /* border:2px solid green; */
+    display: inline;
+    width: 40%;
+    margin-left: 100px;
+    overflow: visible;
+    
+}
+.box{
+    
+    /* border:2px solid greenyellow; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    /* flex: 1; */ 
+    /* width: 96%; */
+   font-size: 3rem;
+   color: #EFC862;
+   margin-top:10px ;
+   padding-top: 20px;
+   padding-left: 35px;
+   padding-bottom: 20px;
+   overflow: visible;
+}
+.description{
+    display: inline;
+    padding-left: 0px;
+    font-size: 2rem;
+    color: white;   
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Lora', serif;
+}
+
+/*    content 2   */
+#content-2{
+    margin:80px 80px;
+   
+}
+#box-2 img{
+     margin-left: 100px;
+}
+
+
+
+/*    content -3   */
+
+#content-3 h3{
+    text-align: center;
+}
+#box-3 img{
+    margin: 20 auto;
+}
+
+
+/* ----------------------content-4------------------------*/
+
+#box-4 img{
+    margin: 0px 120px;
+}
+#content-4  {
+    margin:80px 0px;
+}
+
+/*-----------------------------content5------------------------------*/
+
+#content-5 h3{
+    text-align: center;
+}
+#box-5 img {
+    margin :0px 100px;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+/*-------------------------------buttons-----------------------------*/
+/* #button{
+    border: 2px solid red;
+    display: inline;
+} */
+.button {
+    
+    border-radius: 2rem;
+    margin: auto;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 13%;
+    font-size: 1.6rem;
+    overflow: visible;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: #313132; 
+    color: white; 
+    border: 5px solid white;
+  }
+  
+  .button1:hover {
+    background-color: #27DEBF;
+    color: black;
+    border: 5px solid black;
+  }
+
+
+
+  /*------------------------------------------hoem MEdiaquery---------------*/
+
+  /*-----------------header------------------------------*/
+
+
+@media screen and (max-width: 767px) 
+{
+    html
+        {
+
+            font-size: 45%;
+        }
+    /* .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: blue;
+        
+    } */
+    #home-page{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .box{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .image{
+        margin: 20px auto;
+    }
+    #box-2 , #box-4 {
+        flex-direction: column-reverse;
+    }
+    #content-2 , #content-4 {
+        margin: 0px 0;
+    }
+    .button {
+        
+        width: 38%;
+        
+    }
+}
+@media screen and (max-width: 1039px) 
+{
+    html
+        {
+
+            font-size: 45%;
+        }
+     /**----------------------------header section-----------------*/
+    /* .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex:1;
+        
+        background-color: green;
+    } */
+    
+    /* .header-right{
+        font-size: 42%;
+        margin: auto;
+        
+    } */
+
+  /*-------------------------Section---------------------------------*/
+  #home-page{
+      flex-wrap: wrap;
+      /* border: 2px solid red; */
+      margin: 40px 20px;
+  }
+  .content {
+    /* display: inline; */
+    margin-top: 0px;
+}
+  .content h2 p{
+       font-size:42%;
+  }
+
+  .content img{
+      width: auto;
+      height: auto;
+  }
+  .box {
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    overflow: visible;
+}
+  #box-4 img{
+      width: 40%;
+      margin: 20px auto;
+  }
+  #box-5 img{
+    width: 40%;
+    margin: 20px auto;
+}
+  #box-2 img{
+      width: 40%;
+      margin: 20px auto;
+}
+}
+

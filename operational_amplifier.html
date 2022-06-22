@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="operational amplifier, integrated Circuts unit 2 notes, operational amplifier diagram, working of operational amplifier, aktu integrated circuits">
+    <meta name="description" content="A directly coupled high gain amplifier which can be used to amplify AC
+    as well as DC input signals. 
+    It is mainly used for mathematical operations like addition, subtraction,
+    multiplication, integration etc and hence named as operational amplifier.
+    ">
+    <title>Operational Amplifier</title>
+    <link rel="stylesheet" href="Css/operational_amplifier.css">
+    <link rel="stylesheet" href="Css/topics.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <script src="https://kit.fontawesome.com/613c26716a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #313132;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="left-logo">
+            <img src="images/logohd.png" alt="images">
+
+        </div>
+        <div class="header-right">
+
+
+            <a style="color: white;" class="active" href="home.html">Home</a>
+            <a class="s_bus" href="syllabus.html">Syllabus -Integrated Circuts</a>
+            <a style="color: #EFC862;" href="ic.html">IC-unit2</a>
+            <a href="ic_unit_3.html">IC-Unit 3</a>
+            <a href="ic_unit_4.html">IC-Unit 4</a>
+        </div>
+    </header>
+
+
+    <!-- universal block in which side topics and main topics exists -->
+    <section id="universal-operational-amplifier">
+
+        <input type="checkbox" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+
+        <!-- side topics section -->
+        <section id="topic-ic">
+            <ol class="subject-topics">
+                <div class=" items ">
+                    <span class="heading-topic">Topics</span>
+                    <li> <a style="color: #EFC862;" href="operational_amplifier.html"> Operational Amplifier</a></li>
+                    <li> <a href="types_of_amplifier.html"> Types of Operational Amplifier</a></li>
+                    <li> <a href="non_inverting.html"> Non-Inverting Amplifier</a></li>
+                    <li> <a href="inverting_amplifier.html"> Inverting Amplifier</a></li>
+                    <li> <a href="unity_follower.html"> Unity Follower</a></li>
+                    <li> <a href="summing_amplifier.html"> Summing Amplifier</a></li>
+                    <li> <a href="differential_amplifier.html"> Differential Amplifier</a>
+                    </li>
+                    <li> <a href="instrumentation_amplifier.html"> Instrumentation
+                            Amplifier</a></li>
+
+                    <span>Operational Amplifier Base Circuit</span>
+
+                    <li> <a href="V-I_converter.html"> V-I Converter</a></li>
+                    <li> <a href="I-V_converter.html"> I-V Converter</a> </li>
+                    <li> <a href="generalised impedance converter.html">Generalised Impedence Converter</a> </li>
+                    <li> <a href="Simulation_of_Inductors.html"> Simulation of
+                            Inductors</a></li>
+
+                    <span class="heading-topic">Active Filters</span>
+
+                    <li> <a href="Low_pass_first.html"> 1st order Low Pass Filter</a> </li>
+                    <li> <a href="Low_pass_second.html"> 2st order Low Pass Filter</a>
+                    </li>
+                    <li> <a href="high_pass_first.html"> 1st order High Pass Filter</a>
+                    </li>
+                    <li> <a href="high_pass_second.html"> 2st order High Pass Filter</a>
+                    </li>
+                    <li> <a href="band_pass_first.html"> 1st order Band Pass Filter</a>
+                    </li>
+                    <li> <a href="band_pass_second.html"> 2nd order Band Pass Filter</a>
+                    </li>
+                    <li> <a href="band_reject_first.html"> 1st order Band Reject
+                            Filter</a></li>
+                    <li> <a href="band_reject_second.html"> 2nd order Band Reject
+                            Filter</a> </li>
+                    <li> <a href="all_pass.html"> All Pass Filter</a> </li>
+                    <li> <a href="khn.html"> KHN Filter</a> </li>
+
+                </div>
+            </ol>
+        </section>
+        <!-- main topics block in which main contain exists -->
+        <section class="content-operational-amplifier">
+            <span style="text-decoration: none;" class="top-heading"><strong> OPERATIONAL AMPLIFIER</strong></span>
+
+            <div id="introduction-opamp" class="sub-content-div-operational-amplifier">
+                <ul>
+                    <li>
+                        A directly coupled high gain amplifier which can be used to amplify AC <br> as well as DC input
+                        signals.
+                    </li>
+                    <br>
+                    <li>
+                        It is mainly used for mathematical operations like addition, subtraction, <br> multiplication,
+                        integration etc and hence named as operational amplifier.
+                    </li>
+                </ul>
+                <img src="images/paint.png" alt="">
+            </div>
+            <br>
+            <div id="heading-2" class="sub-content-div-operational-amplifier">
+                <span style="text-decoration: none;" class="left-heading"><strong> OPERATIONAL
+                        AMPLIFIER:</strong></span>
+                <ul>
+                    <li>Here 2,3,7,6,4 are the pin number in IC 741.</li>
+                    <li>Vin (-) is inverting input.</li>
+                    <li> Vin (+) is non inverting input.</li>
+                    <li>Vcc+ and Vcc- is power supply.</li>
+                    <li>Vout is output of the operational amplifier.</li>
+                </ul>
+            </div>
+            <br>
+            <div id="block-diagram" class="sub-content-div-operational-amplifier">
+                <span style="text-decoration: none;" class="left-heading"><strong>Block Diagram Of Operational Amplifier
+                        :</strong></span>
+                <img src="images/block diagram.png" alt="">
+            </div>
+            <br>
+            <div id="block-diagram-working" class="sub-content-div-operational-amplifier">
+                <span style="text-decoration: none;" class="left-heading"><strong>Working of Block Diagram of Op-amp:
+                    </strong></span>
+                <ul>
+                    <li>First the signal passes through (Input Stage), in that stage direct coupling happens, Due to
+                        this the Gain of signal becomes High. </li>
+                    <li>This happens in [Intermediate stage]. Due to this the signal gets shifted from its place (Phase
+                        Shift). </li>
+                    <li>Then the signal passes through Level Shifting stage where it corrects the phase shift of the
+                        signal , and brings back it to its original place.</li>
+                    <li>Then the signal passes to the last stage i.e (Output stage) where it amplifies both negative as
+                        well as positive signal and finally gives an output.</li>
+                </ul>
+            </div>
+            <br>
+
+            <!-- for bootom buttons -->
+
+            <div id="next-previous-button" class="sub-content-div-operational-amplifier">
+                <div class="button-2">
+                    <a href="#">Previous</a>
+                    <a href="types_of_amplifier.html">Next</a>
+                </div>
+            </div>
+            <br>
+
+        </section>
+    </section>
+
+
+    <!-- footer section   -->
+    <footer>
+        <a class="elements" href="about_us.html">Contact Us / About Us</a>&nbsp;&nbsp;
+        <a class="elements" href="terms_and_condition.html">Terms and Conditions</a>&nbsp;&nbsp;
+        <a class="elements" href="privacy_policy.html">Privacy Policy</a>&nbsp;&nbsp;
+        <a class="elements" href="#">&copy; COPYRIGHT | electroozone.com </a>&nbsp;&nbsp;
+      </footer>
+
+
+</body>
+
+</html>

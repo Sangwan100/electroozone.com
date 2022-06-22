@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="low pass filer first order , active filters, classification of filters, frequency response,diagram of all type of filters,low pass filter first order diagram,low pass filter first order working">
+    <meta name="description" content="ctive Filters :- A Filter is a circuit that passes a specified band of frequency & blocks (attenuate) all the frequencies signals outside the band.
+    Classification of Filters :
+    
+    Analog or Digital filters.
+    Passive or Active filters.
+    Audio or RF ( radio frequency) filters.
+    Analog filters are used to filter the analog signals while the digital filters use digital techniques for filtering of analog signals.
+    
+    Passive filters are those filters which consists of passive components only such as resistance , capacitors & inductors.
+    
+    Active filters are those filters which consists of passive as well as active devices (components) such as op-amp , transistors etc.">
+    <title>Active Filters</title>
+    <link rel="stylesheet" href="Css/non-inverting.css">
+    <link rel="stylesheet" href="Css/topics.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <script src="https://kit.fontawesome.com/613c26716a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="left-logo">
+            <img src="images/logohd.png" alt="images">
+
+        </div>
+        <div class="header-right">
+
+
+            <a style="color: white;" class="active" href="home.html">Home</a>
+            <a class="s_bus" href="syllabus.html">Syllabus -Integrated Circuts</a>
+            <a style="color: #EFC862;" href="ic.html">IC-unit2</a>
+            <a href="ic_unit_3.html">IC-Unit 3</a>
+            <a href="ic_unit_4.html">IC-Unit 4</a>
+        </div>
+    </header>
+
+
+    <!-- universal block in which side topics and main topics exists -->
+    <section id="universal-non-inverting">
+
+        <input type="checkbox" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+
+        <!-- side topics section -->
+        <section id="topic-ic">
+            <ol class="subject-topics">
+                <div class=" items ">
+                    <span class="heading-topic">Topics</span>
+                    <li> <a href="operational_amplifier.html"> Operational Amplifier</a></li>
+                    <li> <a href="types_of_amplifier.html"> Types of Operational Amplifier</a></li>
+                    <li> <a href="non_inverting.html"> Non-Inverting Amplifier</a></li>
+                    <li> <a href="inverting_amplifier.html"> Inverting Amplifier</a></li>
+                    <li> <a href="unity_follower.html"> Unity Follower</a></li>
+                    <li> <a href="summing_amplifier.html"> Summing Amplifier</a></li>
+                    <li> <a href="differential_amplifier.html"> Differential Amplifier</a>
+                    </li>
+                    <li> <a href="instrumentation_amplifier.html"> Instrumentation
+                            Amplifier</a></li>
+
+                    <span>Operational Amplifier Base Circuit</span>
+
+                    <li> <a href="V-I_converter.html"> V-I Converter</a></li>
+                    <li> <a href="I-V_converter.html"> I-V Converter</a> </li>
+                    <li> <a href="generalised impedance converter.html">Generalised Impedence Converter</a> </li>
+                    <li> <a href="Simulation_of_Inductors.html"> Simulation of
+                            Inductors</a></li>
+
+                    <span class="heading-topic">Active Filters</span>
+
+                    <li> <a style="color: #EFC862;" href="Low_pass_first.html"> 1st order Low Pass Filter</a> </li>
+                    <li> <a href="Low_pass_second.html"> 2st order Low Pass Filter</a>
+                    </li>
+                    <li> <a href="high_pass_first.html"> 1st order High Pass Filter</a>
+                    </li>
+                    <li> <a href="high_pass_second.html"> 2st order High Pass Filter</a>
+                    </li>
+                    <li> <a href="band_pass_first.html"> 1st order Band Pass Filter</a>
+                    </li>
+                    <li> <a href="band_pass_second.html"> 2nd order Band Pass Filter</a>
+                    </li>
+                    <li> <a href="band_reject_first.html"> 1st order Band Reject
+                            Filter</a></li>
+                    <li> <a href="band_reject_second.html"> 2nd order Band Reject
+                            Filter</a> </li>
+                    <li> <a href="all_pass.html"> All Pass Filter</a> </li>
+                    <li> <a href="khn.html"> KHN Filter</a> </li>
+
+                </div>
+            </ol>
+        </section>
+        <!-- main topics block in which main contain exists -->
+        <section id="content-non-inverting">
+            <span style="text-decoration: none;" id="main-heading-non-inverting"><strong> ACTIVE FILTERS AND LOW PASS
+                    FILTER</strong></span>
+
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862"> Active Filters :-</strong> A Filter is a circuit that passes a
+                    specified band of frequency & blocks (attenuate) all the frequencies signals outside the band. <br>
+                </p>
+                <p> <strong style="color: #EFC862"> Classification of Filters : </strong>
+
+                <ol>
+                    <li> Analog or Digital filters.</li>
+                    <li> Passive or Active filters.</li>
+                    <li> Audio or RF ( radio frequency) filters.</li>
+                </ol>
+                <ul>
+                    <li> Analog filters are used to filter the analog signals while the digital filters use digital
+                        techniques for filtering of analog signals.</li>
+                    <br>
+                    <li> Passive filters are those filters which consists of passive components only such as resistance
+                        , capacitors & inductors.</li>
+                    <br>
+                    <li>
+                        Active filters are those filters which consists of passive as well as active devices
+                        (components) such as op-amp , transistors etc.
+                    </li>
+                </ul>
+                </p>
+                <p> <strong style="color: #EFC862"> Frequency Response : </strong>
+                <ul>
+                    <li> A Curve which shows the relation between the gain of the filter with frequency is called
+                        frequency response.</li><br>
+                    <li> Mainly used Filters are as follows :-
+                        <ol>
+                            <li>
+                                Low Pass Filters (LPF).
+                            </li> <br>
+                            <li> High Pass Filters (HPF).</li><br>
+                            <li> Band Pass Filters (BPF).</li><br>
+                            <li> Band Reject Filters (BRF)--- [ Notch Filter].</li><br>
+                            <li> All Pass Filter (APF)---[ Phase Shift Filter].</li><br>
+                        </ol>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <br>
+            <div id="div-2-non-inverting" class="sub-content-div-non-inverting">
+                <p> <strong> Diagram of All Types Of Filters :-</strong>
+                </p>
+            </div>
+            <br>
+            <div id="introduction-inverting" class="sub-content-div-non-inverting">
+                <img style="width: 100%;" src="images/Circuit diagrams/filters type.png" alt="images">
+            </div>
+            <br>
+            <div id="div-2-non-inverting" class="sub-content-div-non-inverting">
+                <p> <strong> Low Pass Filter (First Order) :-</strong>
+                </p>
+            </div>
+            <br>
+            <div id="div-3-non-inverting" class="sub-content-div-non-inverting">
+                <img src="images/Circuit diagrams/low pass first order/LOW pass filter.png" alt="image">
+            </div>
+            <div id="div-4-non-inverting" class="sub-content-div-non-inverting">
+                <img src="images/circuit working/low pass first order/1.png" alt="image">
+            </div>
+
+            <div id="div-4-non-inverting" class="sub-content-div-non-inverting">
+                <img style="width: 63%;" src="images/circuit working/low pass first order/2.png" alt="image">
+            </div>
+            <br>
+            <div id="div-4-non-inverting" class="sub-content-div-non-inverting">
+                <img style="width: 63%;" src="images/circuit working/low pass first order/3.png" alt="image">
+            </div>
+            <br>
+            <div id="div-4-non-inverting" class="sub-content-div-non-inverting">
+                <img style="width: 63%;" src="images/circuit working/low pass first order/4.png" alt="image">
+            </div>
+            <br>
+
+
+            <!-- for bootom buttons -->
+
+            <div id="next-previous-button-non-inverting" class="sub-content-div-non-inverting">
+                <div class="button-2-non-inverting">
+                    <a href="Simulation_of_Inductors.html">Previous</a>
+                    <a href="Low_pass_second.html">Next</a>
+                </div>
+            </div>
+            <br>
+
+        </section>
+    </section>
+
+
+    <!-- footer section   -->
+    <footer>
+        <a class="elements" href="about_us.html">Contact Us / About Us</a>&nbsp;&nbsp;
+        <a class="elements" href="terms_and_condition.html">Terms and Conditions</a>&nbsp;&nbsp;
+        <a class="elements" href="privacy_policy.html">Privacy Policy</a>&nbsp;&nbsp;
+        <a class="elements" href="#">&copy; COPYRIGHT | electroozone.com </a>&nbsp;&nbsp;
+      </footer>
+
+
+</body>
+
+</html>

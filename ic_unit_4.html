@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" ic unit 4 notes ,Digital Integrated Circuit Design , logic gate Characteristics, speed of operation , propogation delay, FAN-IN, FAN-OUT, power dissipation, Figure of Merit , noise margin">
+    <meta name="description" content="1. Speed of Operations :- The speed of operation of a digital circuit is specified in terms of the propogation delay time. The delay times are measured between the 50% voltage levels of input and output wave forms. The input and output waveform is shown below:">
+    <title>Logic Gates Charcateristics</title>
+    <link rel="stylesheet" href="Css/non-inverting.css">
+    <link rel="stylesheet" href="Css/topics.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <script src="https://kit.fontawesome.com/613c26716a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="left-logo">
+            <img src="images/logohd.png" alt="images">
+
+        </div>
+        <div class="header-right">
+
+
+            <a style="color: white;" class="active" href="home.html">Home</a>
+            <a class="s_bus" href="syllabus.html">Syllabus -Integrated Circuts</a>
+            <a href="ic.html">IC-unit2</a>
+            <a href="ic_unit_3.html">IC-Unit 3</a>
+            <a style="color: #EFC862;" href="ic_unit_4.html">IC-Unit 4</a>
+        </div>
+    </header>
+
+
+    <!-- universal block in which side topics and main topics exists -->
+    <section id="universal-non-inverting">
+
+        <input type="checkbox" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+
+        <!-- side topics section -->
+        <section id="topic-ic">
+            <ol class="subject-topics">
+                <div class=" items ">
+                    <span class="heading-topic">Topics</span>
+                    <li> <a style="color: #EFC862;" href="ic_unit_4.html"> Logic Gate Characteristics</a></li>
+                    <li> <a href="ic_unit4_cmos_inverter_and_realization.html">CMOS Inverter And Design </a></li>
+                    <li> <a href="ic_unit4_cmos_implementation.html">CMOS Implementation</a></li>
+
+
+                </div>
+            </ol>
+        </section>
+        <!-- main topics block in which main contain exists -->
+        <section id="content-non-inverting">
+            <span style="text-decoration: none;" id="main-heading-non-inverting"><strong> UNIT-4 DIGITAL INTEGRATED
+                    CIRCUIT DESIGN</strong></span>
+
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">* LOGIC GATE CHARACTERISTICS :-</strong>
+                </p>
+            </div>
+            <br>
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">1. Speed of Operations :-</strong> The speed of operation of a
+                    digital circuit is specified in terms of the propogation delay time. The delay times are measured
+                    between the 50% voltage levels of input and output wave forms. The input and output waveform is
+                    shown below:
+                </p>
+            </div>
+            <br>
+            <div id="div-3-non-inverting" class="sub-content-div-non-inverting">
+                <img src="images/Circuit diagrams/unit 4/speed of operation.png" alt="images">
+            </div>
+            <br>
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">2. Propagation Delay :-</strong>The progation delay time of the logic
+                    gate is taken as the message of the two delay times:
+                </p>
+            </div>
+            <br>
+            <div id="div-3-non-inverting" class="sub-content-div-non-inverting">
+                <img style="width: 60%;" src="images/Circuit diagrams/unit 4/soo equation.png" alt="images">
+            </div>
+            <br>
+
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">3. FAN-IN :-</strong> The fan-IN of the logic gate is the number of
+                    inputs that the logic gate can handle. For example , if four gate require one unit load for each
+                    input then its fan-In is four.
+                </p>
+            </div>
+            <br>
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">4. FAN-OUT :-</strong> The fan-IN also known as the loading factor is
+                    the maximum number of logic inputs that can be driven by an ouput. For Example, if a logic gate has
+                    a fan-OUT of 8 , then it can drive 8 logic inputs directly.
+                </p>
+            </div>
+            <br>
+
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">5. Power Dissipation :-</strong> The power dissipation of a logic
+                    circuit is defined as the suppy power neede for the logic gate to opeerate with 50% duty cycle at
+                    the specified junction. The heat dissipated at the junction.
+                </p>
+            </div>
+            <br>
+
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">6. Figure of Merit :-</strong> It is defined as the product of power
+                    dissipated (mW) and propogation delay (nS). or Simply : 1mw * 1ns = 1p Joule.
+                </p>
+            </div>
+            <br>
+
+            <div id="introduction-non-inverting" class="sub-content-div-non-inverting">
+                <p>
+                    <strong style="color: #EFC862">7. Noise Margin :-</strong> The circuit ability to tolerate noise
+                    signal is reffered as the noise immunity , a quantitative measure of which is called noise margin.
+                </p>
+            </div>
+            <br>
+
+
+            <!-- for bootom buttons -->
+
+            <div id="next-previous-button-non-inverting" class="sub-content-div-non-inverting">
+                <div class="button-2-non-inverting">
+                    <a href="ic_unit_4.html">Previous</a>
+                    <a href="ic_unit4_cmos_inverter_and_realization.html">Next</a>
+                </div>
+            </div>
+            <br>
+
+        </section>
+    </section>
+
+
+    <!-- footer section   -->
+    <footer>
+        <a class="elements" href="about_us.html">Contact Us / About Us</a>&nbsp;&nbsp;
+        <a class="elements" href="terms_and_condition.html">Terms and Conditions</a>&nbsp;&nbsp;
+        <a class="elements" href="privacy_policy.html">Privacy Policy</a>&nbsp;&nbsp;
+        <a class="elements" href="#">&copy; COPYRIGHT | electroozone.com </a>&nbsp;&nbsp;
+    </footer>
+
+
+</body>
+
+</html>
